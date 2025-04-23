@@ -1,1 +1,1 @@
-# index
+Ngoding tapi kolep
