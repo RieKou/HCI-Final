@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../HTMLS/styles/bookreserv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <div class="swipe">
+                    <img src="cover.png" alt="">
+                    <img src="back.jpg" alt="">
+                    <img src="inside.jpg" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="Rcontainer">
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <br>
+                <div class="review">(Liat Ulasan)</div>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="avail">
+                <div class="boxA">
+                    Tersedia
+                </div>
+                <i class="fa-regular fa-heart heart" id="heart" onclick="favorite(this)"></i>
+            </div>
+            <br>
+            <h1>Laut Bercerita</h1>
+            <div class="scroll">
+                <br>
+                <h3>Tanggal Terbit: 21 Desember 2017</h3>
+                <h3>Penulis: Leila S. Chudori</h3>
+                <h3>Penerbit: Kepustakaan Populer Gramedia</h3>
+                <h3>Jumlah Halaman: 400</h3>
+                <br>
+                <h4>Deskripsi: </h4>
+                <p>Buku ini terdiri atas dua bagian. Bagian pertama mengambil sudut pandang seorang mahasiswa
+                    aktivis bernama Laut, menceritakan bagaimana Laut dan kawan-kawannya menyusun rencana,
+                    berpindah-pindah dalam pelarian, hingga tertangkap oleh pasukan rahasia. Sedangkan bagian
+                    kedua dikisahkan oleh Asmara, adik Laut. Bagian kedua mewakili perasaan keluarga korban
+                    penghilangan paksa, bagaimana pencarian mereka terhadap kerabat mereka yang tak pernah kembali.</p>
+                <p>Buku ini ditulis sebagai bentuk tribute bagi para aktivis yang diculik, yang kembali, dan yang
+                    tak kembali dan keluarga yang terus menerus sampai sekarang mencari-cari jawaban.</p>
+                <p>Novel ini merupakan perwujudan dalam bentuk fiksi bahwa kita sebagai bangsa Indonesia tidak boleh
+                    melupakan sejarah yang telah membentuk sekaligus menjadi tumpuan bangsa Ini. Novel ini juga
+                    mengajak pembaca menguak misteri-misteri bangsa ini yang mana tidak diajarkan di sekolah.
+                    Walaupun novel ini adalah fiksi, laut bercerita menunjukkan kepada pembaca bahwa negeri ini pernah
+                    memasuki masa pemerintahan yang kelam.</p>
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit" class="reserve">Reservasi Buku</button>
+                <button type="submit" class="booking">Pinjam Sekarang</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
