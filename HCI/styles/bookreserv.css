@@ -185,6 +185,51 @@
     cursor: pointer;
 }
 
+.feature{
+    text-align: center;
+}
+
+.date input[type="date"]{
+    background-color: rgb(174, 174, 174);
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid rgb(174, 174, 174);
+    color: white;
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submit{
+    background-color: #E6DAFD;
+    color: #7c4DFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#submitExtend{
+    background-color: #E6DAFD;
+    color: #7c4DFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.end{
+    position: static;
+    padding: 20px 0 0 0;
+}
 
 @media (max-width: 678px) {
     .container{
