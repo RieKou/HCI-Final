@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/bookreserv.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <div class="swipe">
+                    <img src="../img/cover.png" alt="">
+                    <img src="../img/back.jpg" alt="">
+                    <img src="../img/inside.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="feature">
+                <h1>Perpanjang Durasi Peminjaman Buku</h1>
+            </div>
+            <br><br>
+            <h2>Tanggal Pengembalian</h2>
+            <br>
+            <div class="date">
+                <input type="date" name="extend" id="extend" onchange="borrowingLimit()">
+            </div>
+            <br>
+            <input type="checkbox" id="term3">
+            Saya memahami bahwa saya akan terkena denda apabila tidak mengembalikan pada tanggal yang telah diinput di atas.
+            <br><br>
+            <input type="checkbox" id="term4">
+            Saya memahami bahwa perpanjang buku hanya dapat dilakukan maksimum 2 kali dengan masing - masing 7 hari lamanya.
+            <br>
+            <div style="flex-grow: 1;"></div>
+            <div class="end">
+                <div class="submit">
+                    <button id="submit" onclick="window.location.href='dashboard.html'">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/scriptextend.js"></script>
+</body>
+</html>
