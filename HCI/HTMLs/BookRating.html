@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/bookreserv.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <div class="swipe">
+                    <img src="../fotoww/cover.png" alt="">
+                    <img src="../fotoww/back.jpg" alt="">
+                    <img src="../fotoww/inside.jpg" alt="">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="right">
+            <div class="feature">
+                <h1>Beri Ulasan</h1>
+            </div>
+            <br><br>
+            <h2>Ratings</h2>
+            <div class="line"></div>
+            <br>
+            <div class="rating-row">
+                <div class="name">Kualitas Buku</div>
+                <div class="Rcontainer" id="clicked-stars">
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                </div>
+            </div>
+            <div class="rating-row">
+                <div class="name">Kualitas Bacaan</div>
+                <div class="Rcontainer" id="clicked-stars">
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                </div>
+            </div>
+            <div class="rating-row">
+                <div class="name">Keseluruhan</div>
+                <div class="Rcontainer" id="clicked-stars">
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                    <div class="star">☆</div>
+                </div>
+            </div>
+            <br>
+            <div class="name">Review</div>
+            <textarea rows="2" cols="40"></textarea>
+
+            <div class="end">
+                <div class="submit">
+                  // go back dashboard
+                    <button id="submit" onclick="window.location.href='dashboard.html'">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/scriptrating.js"></script>
+</body>
+</html>
