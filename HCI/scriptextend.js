@@ -38,3 +38,7 @@ checkbox1.addEventListener('change', validateSubmit);
 checkbox2.addEventListener('change', validateSubmit);
 
 borrowingLimit();
+
+function showqr(){
+    document.getElementById('popup').style.display = "flex";
+}
