@@ -1,43 +1,49 @@
-const checkbox1 = document.getElementById('term3');
-const checkbox2 = document.getElementById('term4');
+function favorite(heart){
+    heart.classList.toggle("fa-regular");
+    heart.classList.toggle("fa-solid");
+}
+
+
+const checkbox1 = document.getElementById('term1');
+const checkbox2 = document.getElementById('term2');
 const button = document.getElementById('submit');
-const dateInput = document.getElementById('extend');
+const dateInput1 = document.getElementById('pickup');
+const dateInput2 = document.getElementById('return');
 
 function borrowingLimit(){
-    const today = new Date();
-    const max = new Date();
+    const date1 = dateInput1.value;
+   
+    if (date1){
+        dateInput2.disabled = false;
 
-    max.setDate(today.getDate() + 7);
+        const max = new Date(date1);
+        max.setDate(max.getDate() + 7);
 
-    const todayStr = today.toISOString().split('T')[0];
-    const maxStr = max.toISOString().split('T')[0];
-
-    dateInput.min = todayStr;
-    dateInput.max = maxStr;
-
+        const maxStr = max.toISOString().split('T')[0];
+        dateInput2.max = maxStr;
+        dateInput2.min = date1; 
+    } else{
+        dateInput2.disabled = true;
+        dateInput2.value = '';
+    }
     validateSubmit();
 }
 
 function validateSubmit(){   
-    const date1 = dateInput.value; 
+    const date1 = dateInput1.value; 
+    const date2 = dateInput2.value; 
     const checkboxes = checkbox1.checked && checkbox2.checked;
-
-    let validDate = false;
-    if (date1) {
-        const selectedDate = new Date(date1);
-        const minDate = new Date(dateInput.min);
-        const maxDate = new Date(dateInput.max);
-        validDate = selectedDate >= minDate && selectedDate <= maxDate;
-    }
-
-    button.disabled = !(checkboxes && validDate);
+    const date = date1 && date2 && new Date(date2) <= new Date(dateInput2.max);
+    
+    button.disabled = !(checkboxes && date);
 }
 
-dateInput.addEventListener('change', validateSubmit);
+dateInput1.addEventListener('change', borrowingLimit);
+dateInput2.addEventListener('change', validateSubmit);
 checkbox1.addEventListener('change', validateSubmit);
 checkbox2.addEventListener('change', validateSubmit);
 
-borrowingLimit();
+validateSubmit();
 
 function showqr(){
     document.getElementById('popup').style.display = "flex";
