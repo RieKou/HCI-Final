@@ -33,12 +33,22 @@
             Saya memahami bahwa saya akan terkena denda apabila tidak mengembalikan pada tanggal yang telah diinput di atas.
             <br><br>
             <input type="checkbox" id="term4">
-            Saya memahami bahwa perpanjang buku hanya dapat dilakukan maksimum 2 kali dengan masing - masing 7 hari lamanya.
+            Saya memahami bahwa perpanjangan peminjaman buku hanya dapat dilakukan maksimum 2 kali dengan masing - masing 7 hari lamanya.
             <br>
             <div style="flex-grow: 1;"></div>
             <div class="end">
                 <div class="submit">
-                    <button id="submit" onclick="window.location.href='dashboard.html'">Submit</button>
+                    <button id="submit" onclick="showqr()">Submit</button>
+                </div>
+            </div>
+
+            <div class="popup-bg" id="popup">
+                <div class="popup-box">
+                    <h3 class="phrase">Tanggal pengembalian buku telah diupdate.😄</h3>
+                    <img src="../fotoww/verified.png" alt="">
+                    <br>
+                    <!-- BALIK KE DASHBOARD NANTI -->
+                    <button class="close" onclick="window.location.href='dashboard.html'">X</button>
                 </div>
             </div>
         </div>
