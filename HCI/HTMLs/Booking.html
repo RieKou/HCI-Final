@@ -11,9 +11,9 @@
         <div class="left">
             <div class="box">
                 <div class="swipe">
-                    <img src="../img/cover.png" alt="">
-                    <img src="../img/back.jpg" alt="">
-                    <img src="../img/inside.jpg" alt="">
+                    <img src="../fotoww/cover.png" alt="">
+                    <img src="../fotoww/back.jpg" alt="">
+                    <img src="../fotoww/inside.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -41,7 +41,17 @@
             <input type="checkbox" id="term2">
             Saya memahami bahwa saya akan terkena denda apabila tidak mengembalikan pada tanggal yang telah diinput di atas.
             <div class="submit">
-                <button id="submit" onclick="window.location.href='BookReservation.html'">Submit</button>
+                <button id="submit" onclick="showqr()">Submit</button>
+            </div>
+
+            <div class="popup-bg" id="popup">
+                <div class="popup-box">
+                    <h3 class="phrase">Silahkann tunjukkan QR code ini kepada pegawai perpustakaan pada hari pengambilan.</h3>
+                    <img src="../fotoww/code.jpeg" alt="">
+                    <br>
+                    <!-- BALIK KE DASHBOARD NANTI -->
+                    <button class="close" onclick="window.location.href='dashboard.html'">X</button>
+                </div>
             </div>
         </div>
     </div>
