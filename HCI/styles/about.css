@@ -5,9 +5,15 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #8e31b9;
-  color: #8e31b9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8e31b9;
+    color: #8e31b9;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;                 
 }
 
 header {
@@ -26,8 +32,8 @@ header {
 }
 
 .search-bar{
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .search-bar input{
@@ -38,11 +44,11 @@ gap: 10px;
 }
 
 .search-bar button{
-border: none;
-background-color: #8e31b9;
-border-radius: 25px;
-width: 40px;
-height: 40px;
+  border: none;
+  background-color: #8e31b9;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
 }
 
 .menu a{
@@ -69,44 +75,44 @@ height: 40px;
 }
 
 .tombol-notif button{
-background-color: #8e31b9;
-border-radius: 25px;
-border: none;
+  background-color: #8e31b9;
+  border-radius: 25px;
+  border: none;
 }
 
 .tombol-notif img{
-width: 30px;
-height: 30px;
-border: none;
-border-radius: 45px;
-padding: 8px;
-padding-top: 5px;
-position: relative;
-top: 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 45px;
+  padding: 8px;
+  padding-top: 5px;
+  position: relative;
+  top: 2px;
 }
 
 .drop-notif-wrap{
-  position: absolute;
-  top: 7%;
-  right: 1%;
-  width: 350px;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.5s;
-  z-index: 5;
+    position: absolute;
+    top: 7%;
+    right: 1%;
+    width: 350px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 5;
 }
 
 .judul-notif{
-padding-bottom: 15px;
-color: #8e31b9;
+  padding-bottom: 15px;
+  color: #8e31b9;
 }
 
 .drop-notif-wrap.open-notif{
-max-height: 296px;
+  max-height: 296px;
 }
 
 .drop-notif{
-background-color: #f6ddff;
+  background-color: #f6ddff;
   padding: 20px;
   margin: 10px;
 }
@@ -118,12 +124,13 @@ background-color: #f6ddff;
   padding: 3px;
   margin-top: 8px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .pembatas{
-width: 329.222px;
-position: relative;
-right: 20px;
+  width: 329.222px;
+  position: relative;
+  right: 20px;
 }
 
 .prf-menu-wrap{
@@ -178,7 +185,7 @@ right: 20px;
 }
 
 .prf-menu-link img{
-  width: 40px;
+  width: 60px;
   border-radius: 50%;
   padding: 8px;
   margin-right: 15px;
@@ -196,7 +203,7 @@ right: 20px;
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
 
   .about-container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 40px 200px;
     padding: 20px 20px;
     background-color: #de9dff;
