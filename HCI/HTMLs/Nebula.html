@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/bookreserv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
+<header>
         <div class="logo-toko">
             <img src="../fotoww/BookLend  Smart Borrowing.png" alt="" class="">
         </div>
@@ -43,7 +44,7 @@
                 </div>
                 <hr>
 
-                <div class="notif" onclick="window.location.href='BookExtension.html'">
+               <div class="notif" onclick="window.location.href='BookExtension.html'">
                     <h3>Pengembalian Buku</h3>
                     <p>[REMINDER] H-2 Mengembalikan Buku Nebula. Klik disini jika ingin perpanjang.</p>
                 </div>
@@ -88,64 +89,54 @@
         <div class="left">
             <div class="box">
                 <div class="swipe">
-                    <img src="../fotoww/cover.png" alt="">
-                    <img src="../fotoww/back.jpg" alt="">
-                    <img src="../fotoww/inside.jpg" alt="">
+                    <img src="../fotoww/books/Tere-Liye/book-21.jpg" alt="">
+                    <img src="../fotoww/nebula.png" alt="">
                 </div>
             </div>
             <br>
+            <div class="Rcontainer">
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <div class="rating"></div>
+                <br>
+                <div class="review" onclick="window.location.href='NebulaRating.html'">(Liat Ulasan)</div>
+            </div>
         </div>
-
+        
         <div class="right">
-            <div class="feature">
-                <h1>Beri Ulasan</h1>
-            </div>
-            <br><br>
-            <h2>Ratings</h2>
-            <div class="line"></div>
-            <br>
-            <div class="rating-row">
-                <div class="name">Kualitas Buku</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
+            <div class="avail">
+                <div class="boxA">
+                    Tersedia
                 </div>
-            </div>
-            <div class="rating-row">
-                <div class="name">Kualitas Bacaan</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
-            </div>
-            <div class="rating-row">
-                <div class="name">Keseluruhan</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
+                <i class="fa-regular fa-heart heart" id="heart" onclick="favorite(this)"></i>
             </div>
             <br>
-            <div class="name">Review</div>
-            <textarea rows="2" cols="40"></textarea>
-
-            <div class="end">
-                <div class="submit">
-                    <button id="submit" onclick="window.location.href='home.html'">Submit</button>
-                </div>
+            <h1>Nebula</h1>
+            <div class="scroll">
+                <br>
+                <h3>Tanggal Terbit: 21 Desember 2017</h3>
+                <h3>Penulis: Tere Liye</h3>
+                <h3>Penerbit: Gramedia Pustaka Umum</h3>
+                <h3>Jumlah Halaman: 376</h3>
+                <br>
+                <h4>Deskripsi: </h4>
+                <p>Selena dan Nebula adalah buku ke-8 dan ke-9 yang emnceritakan siapa orangtua Raib dalam serial
+                    petualangan dunia paralel. Dua buku ini sebaiknya dibacara berurutan. Kedua buku ini juga bercerita
+                    tentang Akademi Bayangan Tingkat Tinggi, sekolah terbaik di seluruh Klan Bulan. Tentang persahabatan
+                    tiga mahasiswa, yang diam-diam memiliki rencana bertualan ke tempat - tempat jauh. Tapi petualangan itu
+                    berakhir buruk, saat persehabatan mereka diuji dengan rasa suka, egoisme, dan pengkhianatan. Ada banyak
+                    karakter baru, tempat - tempat baru, juga sejarah dunia paralel yang diungkap.</p>
+                
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit" class="reserve" onclick="window.location.href = 'home.html'">Reservasi Buku</button>
+                <button type="submit" class="booking" onclick="window.location.href = 'NebulaBooking.html'">Pinjam Sekarang</button>
             </div>
         </div>
     </div>
-
-    <script src="../js/scriptrating.js"></script>
+    <script src="../js/scriptbooking.js"></script>
 </body>
 </html>

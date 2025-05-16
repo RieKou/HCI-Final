@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/bookreserv.css">
+    <link rel="stylesheet" href="../styles/book.css">
 </head>
 <body>
     <header>
@@ -88,64 +88,71 @@
         <div class="left">
             <div class="box">
                 <div class="swipe">
-                    <img src="../fotoww/cover.png" alt="">
-                    <img src="../fotoww/back.jpg" alt="">
-                    <img src="../fotoww/inside.jpg" alt="">
+                    <img src="../fotoww/books/Tere-Liye/book-21.jpg" alt="">
+                    <img src="../fotoww/nebula.png" alt="">
                 </div>
             </div>
-            <br>
         </div>
-
         <div class="right">
-            <div class="feature">
-                <h1>Beri Ulasan</h1>
-            </div>
-            <br><br>
-            <h2>Ratings</h2>
+            <h1>Nebula</h1>
             <div class="line"></div>
-            <br>
-            <div class="rating-row">
-                <div class="name">Kualitas Buku</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
+            <div class="ratingpoint">5.0</div>
+            <div class="stars">
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
             </div>
-            <div class="rating-row">
-                <div class="name">Kualitas Bacaan</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
-            </div>
-            <div class="rating-row">
-                <div class="name">Keseluruhan</div>
-                <div class="Rcontainer" id="clicked-stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
-            </div>
-            <br>
-            <div class="name">Review</div>
-            <textarea rows="2" cols="40"></textarea>
-
-            <div class="end">
-                <div class="submit">
-                    <button id="submit" onclick="window.location.href='home.html'">Submit</button>
+            <div class="qty">(2 Ratings)</div>
+            <div class="category">
+                <div class="wrap">
+                    <div class="sort">
+                        <div class="sort-button" id="newest" style="background-color:  rgb(225, 211, 254);">Terbaru</div>
+                        <div class="sort-button" id="highest" style="background-color:  rgb(44, 201, 0);">Tertinggi</div>
+                        <div class="sort-button" id="lowest" style="background-color:  rgb(242, 72, 34);">Terendah</div>
+                    </div>
+                    <br>
+                    <div class="scroll-rating">
+                        <div class="content">
+                            <div class="newest-rating" id="review1">
+                                <img src="../fotoww/profile.png" alt="">
+                                <div class="user-rating">
+                                    <h4>Barney</h4>
+                                    <div class="stars">
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                    </div>
+                                </div>
+                                <p>Nebula adalah buku terbaik dan terseru yang saya pernah baca.</p>
+                                <div class="grey-line"></div>
+                            </div>
+                            <div class="newest-rating" id="review2">
+                                <img src="../fotoww/profile.png" alt="">
+                                <div class="user-rating">
+                                    <h4>Dora</h4>
+                                    <div class="stars">
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                        <div class="Userstar">★</div>
+                                    </div>
+                                </div>
+                                <p>No comment as it's totally recommended!!</p>
+                                <div class="grey-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="back" onclick="window.location.href='Nebula.html'">Back</button> 
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="../js/scriptrating.js"></script>
+    <script src="../js/scriptview.js"></script>
 </body>
 </html>

@@ -7,20 +7,21 @@
   <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
-  <header class="atasan">
+  <header>
     <div class="logo-toko">
       <img src="../fotoww/BookLend  Smart Borrowing.png" alt="" class="">
     </div>
+
     <form class="search-bar">
       <input type="text" placeholder="Search ... ">
       <button type="submit"><img src="../ggl-rsc/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
     </form>
 
     <div class="menu">
-      <a href="#">Beranda</a>
-      <a href="about.html">Tentang Kami</a>
+      <a href="home.html">Beranda</a>
       <a href="BookReservation.html">Reservasi</a>
-      <a href="#">Favorit</a>
+      <a href="BookFavorite.html">Favorite</a>
+      <a href="BookHistory.html">Riwayat Peminjaman</a>
     </div>
 
     <div class="user-profile">
@@ -33,7 +34,6 @@
         <button type="submit"><img src="../ggl-rsc/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" 
         alt="" onpointerenter="toggleNotif()"></button>
       </form>
-      
     </div>
 
     <div class="drop-notif-wrap" id="notifDrop" onpointerleave="toggleNotif()">
@@ -43,19 +43,18 @@
         </div>
         <hr>
 
-        <div class="notif">
-          <h3>Notif 1</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div class="notif" onclick="window.location.href='BookExtension.html'">
+          <h3>Pengembalian Buku</h3>
+          <p>[REMINDER] H-2 Mengembalikan Buku Nebula. Klik disini jika ingin perpanjang.</p>
+        </div>
+        <hr class="pembatas">
+        <div class="notif" onclick="window.location.href='Bintang.html'">
+          <h3>Bintang</h3>
+          <p>[BARU] Bintang baru saja di-upload oleh pihak perpustakaan.</p>
         </div>
         <hr class="pembatas">
         <div class="notif">
-          <h3>Notif 2</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <hr class="pembatas">
-        <div class="notif">
-          <h3>Notif 3</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h3>Beri Ulasan</h3>
         </div>
         <hr class="pembatas">
       </div>
@@ -93,8 +92,8 @@
 
   <div class="introduction">
     <div class="text">
-      <h1>Aplikasi Peminjaman Buku Cerdas buatan Anak BINUS🥶 [STC]</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis veniam nemo libero soluta sint eligendi non nisi placeat quia.</p>
+      <h1>BookLend</h1>
+      <p>Aplikasi peminjaman buku yang kini hadir untuk membantu dan mempercepat proses peminjaman buku tanpa ribet!</p>
       <form action="about.html">
         <button type="submit" class="read-more">Baca selengkapnya ></button>
       </form>
@@ -113,7 +112,7 @@
 
     <div class="displays">
       <div class="cards">
-        <img src="../fotoww/books/Leila-Chudori/book-1.jpg" alt="">
+        <img src="../fotoww/cover.png" alt="" onclick="window.location.href='LautBercerita.html'">
         <h2>Laut Bercerita</h2>
         <p>by Leila S. Chudori</p>
       </div>
@@ -142,7 +141,7 @@
         <h2>The Setting Sun</h2>
         <p>by Osamu Dazai</p>
       </div>
-      <div class="cards">
+      <div class="cards" onclick="window.location.href='Nebula.html'">
         <img src="../fotoww/books/Tere-Liye/book-21.jpg" alt="">
         <h2>Nebula</h2>
         <p>by Tere Liye</p>
@@ -169,12 +168,12 @@
         <h2>Komet</h2>
         <p>by Tere Liye</p>
       </div>
-      <div class="cards">
+      <div class="cards" onclick="window.location.href='Bintang.html'">
         <img src="../fotoww/books/Tere-Liye/book-15.jpg" alt="">
         <h2>Bintang</h2>
         <p>by Tere Liye</p>
       </div>
-      <div class="cards">
+      <div class="cards" onclick="window.location.href='Nebula.html'">
         <img src="../fotoww/books/Tere-Liye/book-21.jpg" alt="">
         <h2>Nebula</h2>
         <p>by Tere Liye</p>
@@ -230,6 +229,6 @@
     </div>
   </footer>
   
-<script src="../JS/src.js"></script>
+<script src="../js/src.js"></script>
 </body>
 </html>

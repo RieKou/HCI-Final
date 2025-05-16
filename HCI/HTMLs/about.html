@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
-  <header class="atasan">
+  <header>
     <div class="logo-toko">
       <img src="../fotoww/BookLend  Smart Borrowing.png" alt="" class="">
     </div>
+
     <form class="search-bar">
       <input type="text" placeholder="Search ... ">
       <button type="submit"><img src="../ggl-rsc/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
@@ -18,9 +19,9 @@
 
     <div class="menu">
       <a href="home.html">Beranda</a>
-      <a href="#" class="active">Tentang Kami</a>
-      <a href="#">Reservasi</a>
-      <a href="#">Favorit</a>
+      <a href="BookReservation.html">Reservasi</a>
+      <a href="BookFavorite.html">Favorite</a>
+      <a href="BookHistory.html">Riwayat Peminjaman</a>
     </div>
 
     <div class="user-profile">
@@ -33,7 +34,6 @@
         <button type="submit"><img src="../ggl-rsc/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" 
         alt="" onpointerenter="toggleNotif()"></button>
       </form>
-      
     </div>
 
     <div class="drop-notif-wrap" id="notifDrop" onpointerleave="toggleNotif()">
@@ -43,26 +43,25 @@
         </div>
         <hr>
 
-        <div class="notif">
-          <h3>Notif 1</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div class="notif" onclick="window.location.href='BookExtension.html'">
+          <h3>Pengembalian Buku</h3>
+          <p>[REMINDER] H-2 Mengembalikan Buku Nebula. Klik disini jika ingin perpanjang.</p>
+        </div>
+        <hr class="pembatas">
+        <div class="notif" onclick="window.location.href='Bintang.html'">
+          <h3>Bintang</h3>
+          <p>[BARU] Bintang baru saja di-upload oleh pihak perpustakaan.</p>
         </div>
         <hr class="pembatas">
         <div class="notif">
-          <h3>Notif 2</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <hr class="pembatas">
-        <div class="notif">
-          <h3>Notif 3</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h3>Beri Ulasan</h3>
         </div>
         <hr class="pembatas">
       </div>
     </div>
 
     <div class="prf-menu-wrap" id="pfpMenu" onpointerleave="toggleMenu()">
-      <div class="prf-menu">
+      <div class="prf-menu" >
           <div class="ingfo">
               <img src="../fotoww/pfp.png" alt="">
               <h2>dummy_123</h2>
@@ -81,7 +80,7 @@
           <a href="../HTMLs/sign-in.html" class="prf-menu-link"><img 
               src="../ggl-rsc/logout_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" 
               alt=""><p>Keluar</p></a>
-      </div>
+    </div>
     </div>
   </header>
 
